@@ -1,0 +1,5 @@
+universe 				= vanilla
+executable 				= ./z
+when_to_transfer_output = ON_EXIT
+output                  = z.out
+queue 1

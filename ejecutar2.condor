@@ -1,0 +1,5 @@
+universe 				= vanilla
+executable 				= ./y
+when_to_transfer_output = ON_EXIT
+output                  = y.out
+queue 1
