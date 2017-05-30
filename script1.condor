@@ -1,15 +1,28 @@
-ClassAd1
-ClassAd2
+
 executable = /usr/bin/wget
 Arguments = https://raw.githubusercontent.com/josanabr/HTCondor-quiz/master/x.c
 output = x.c
+error = err.$(cluster).$(process)
+log = log.$(cluster).$(process)
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
 Queue
- 
+
+executable = /usr/bin/wget
 Arguments = https://raw.githubusercontent.com/josanabr/HTCondor-quiz/master/y.c
 output = y.c
+error = err.$(cluster).$(process)
+log = log.$(cluster).$(process)
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
 Queue
- 
+
+executable = /usr/bin/wget 
 Arguments = https://raw.githubusercontent.com/josanabr/HTCondor-quiz/master/z.c
 output = z.c
+error = err.$(cluster).$(process)
+log = log.$(cluster).$(process)
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
 Queue
 
