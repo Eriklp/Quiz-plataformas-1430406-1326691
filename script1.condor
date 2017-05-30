@@ -1,0 +1,15 @@
+ClassAd1
+ClassAd2
+executable = /usr/bin/wget
+Arguments = https://raw.githubusercontent.com/josanabr/HTCondor-quiz/master/x.c
+output = x.c
+Queue
+ 
+Arguments = https://raw.githubusercontent.com/josanabr/HTCondor-quiz/master/y.c
+output = y.c
+Queue
+ 
+Arguments = https://raw.githubusercontent.com/josanabr/HTCondor-quiz/master/z.c
+output = z.c
+Queue
+
