@@ -1,6 +1,7 @@
-job wget ScriptHTCondor1-wget.condor
-Job compilar ScriptHTCondor2-compilar.condor
-Job ejecutar ScriptHTCondor3-ejecutar.condor
-PARENT wget CHILD compilar
-PARENT compilar CHILD ejecutar
-
+Job descarga ScriptHTCondor-wget.condor
+Job compilacion ScriptHTCondor2-compilar.condor
+Job ejec1 ejecutar1.condor
+Job ejec2 ejecutar2.condor
+Job ejec3 ejecutar3.condor
+PARENT descarga CHILD compilacion
+PARENT compilacion CHILD ejec1 ejec2 ejec3
