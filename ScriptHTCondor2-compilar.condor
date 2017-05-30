@@ -2,18 +2,18 @@ universe 				= docker
 docker_image			= frolvlad/alpine-gcc
 executable 				= gcc
 transfer_executable		= false
-arguments				= --static x.c -o x.out
+arguments				= --static x.c -o x
 should_transfer_files   = YES
 transfer_input_files    = x.c
 when_to_transfer_output = ON_EXIT
 queue 1
 
 
-arguments				= --static y.c -o y.out
+arguments				= --static y.c -o y
 transfer_input_files    = y.c
 queue 1
 
-arguments				= --static z.c -o z.out
+arguments				= --static z.c -o z
 transfer_input_files    = z.c
 queue 1
 
