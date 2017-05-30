@@ -1,0 +1,12 @@
+universe				= vanilla
+executable 				= /usr/bin/wget
+arguments				= https://raw.githubusercontent.com/josanabr/HTCondor-quiz/master/x.c
+queue 1
+
+arguments				= https://raw.githubusercontent.com/josanabr/HTCondor-quiz/master/y.c
+queue 1
+
+arguments				= https://raw.githubusercontent.com/josanabr/HTCondor-quiz/master/z.c
+queue 1
+
+
